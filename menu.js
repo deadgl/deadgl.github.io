@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     <a href="${xenoPath}" class="text-gray-300 hover:text-blue-400 transition flex items-center gap-2">
                         <i class="fa-brands fa-linux text-xs"></i> Xeno Linux
                     </a>
-                    <a href="https://github.com/SEU-USUARIO/XENO-LINUX" target="_blank" rel="noopener" 
+                    <a href="https://github.com/deadgl/" target="_blank" rel="noopener" 
                        class="flex items-center gap-2 bg-gray-800 hover:bg-gray-700 text-white text-xs px-3 py-1.5 rounded-lg border border-gray-700 transition">
                         <i class="fa-brands fa-github text-sm"></i> GitHub
                     </a>
