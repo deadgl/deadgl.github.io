@@ -6,26 +6,21 @@
     <title>Xeno Linux — Orchestration Script for Wine/Proton</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="../menu.js" defer></script>
 </head>
 <body class="bg-gray-900 text-gray-100 font-sans min-h-screen flex flex-col justify-between">
 
-    <header class="border-b border-gray-800 bg-gray-950/50 backdrop-blur sticky top-0 z-50">
-        <div class="max-w-4xl mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="flex items-center gap-3">
-                <i class="fa-brands fa-linux text-2xl text-blue-400"></i>
-                <span class="font-bold text-lg tracking-wide">Xeno-Linux</span>
-            </div>
-            <a href="https://github.com/deadgl/xeno-linux" target="_blank" 
-               class="flex items-center gap-2 bg-gray-800 hover:bg-gray-700 text-sm px-4 py-2 rounded-lg transition border border-gray-700">
-                <i class="fa-brands fa-github text-lg"></i>
-                <span>GitHub Repository</span>
-            </a>
-        </div>
-    </header>
+    <div id="main-nav"></div>
 
     <main class="max-w-4xl mx-auto px-6 py-12 flex-grow">
         
-        <section class="text-center py-8">
+        <div class="mb-6">
+            <a href="../" class="inline-flex items-center gap-2 text-sm text-gray-400 hover:text-white bg-gray-800/50 px-3 py-1.5 rounded-lg border border-gray-800 transition">
+                <i class="fa-solid fa-arrow-left text-xs"></i> Return to the Main Page
+            </a>
+        </div>
+
+        <section class="text-center py-6">
             <div class="flex flex-wrap justify-center gap-2 mb-6">
                 <img src="https://img.shields.io/badge/OS-Linux-font?logo=linux&logoColor=white&color=222" alt="Linux Badge">
                 <img src="https://img.shields.io/badge/Compatibility-Wine%2FProton-purple" alt="Wine Badge">
@@ -44,8 +39,8 @@
                 <a href="#quickstart" class="bg-blue-600 hover:bg-blue-500 text-white font-medium px-6 py-3 rounded-lg shadow-lg transition">
                     How to use
                 </a>
-                <a href="https://github.com/deadgl/xeno-linux" target="_blank" class="bg-gray-800 hover:bg-gray-700 text-gray-200 font-medium px-6 py-3 rounded-lg border border-gray-700 transition">
-                    See source code
+                <a href="https://github.com/deadgl/xeno-linux" target="_blank" rel="noopener" class="bg-gray-800 hover:bg-gray-700 text-gray-200 font-medium px-6 py-3 rounded-lg border border-gray-700 transition flex items-center gap-2">
+                    <i class="fa-brands fa-github"></i> View Source Code
                 </a>
             </div>
         </section>
@@ -82,15 +77,15 @@ cd xeno-linux</pre>
                 </div>
 
                 <div class="bg-gray-950 p-4 rounded-lg border border-gray-800">
-                    <span class="text-xs text-gray-500 font-mono">2. Get the Xeno executable</span>
+                    <span class="text-xs text-gray-500 font-mono">2. Get the Xeno executable.</span>
                     <p class="text-sm text-gray-300 mt-1">
-                        Download the installer manually from <a href="https://xeno.now/method" target="_blank" class="text-blue-400 underline">Xeno</a> and move it to the destination directory indicated in the documentation:
+                        Download the installer manually from <a href="https://www.xeno.now/method" target="_blank" rel="noopener" class="text-blue-400 underline">Xeno</a> and move the executable (e.g.: <code class="text-amber-400">Xeno-v1.3.55.exe</code>) to the destination directory:
                     </p>
                     <pre class="text-gray-400 font-mono text-xs mt-2 bg-gray-900 p-2 rounded">~/.wine_roblox_xeno/drive_c/Xeno/</pre>
                 </div>
 
                 <div class="bg-gray-950 p-4 rounded-lg border border-gray-800">
-                    <span class="text-xs text-gray-500 font-mono">3. Make the script executable and run it</span>
+                    <span class="text-xs text-gray-500 font-mono">3. Make the script executable and run it.</span>
                     <pre class="text-blue-400 font-mono text-sm mt-1 select-all">chmod +x launch.sh
 ./launch.sh</pre>
                 </div>
@@ -113,7 +108,7 @@ cd xeno-linux</pre>
     </main>
 
     <footer class="border-t border-gray-800 py-6 text-center text-xs text-gray-500">
-        <p>Distributed under the license <a href="https://www.gnu.org/licenses/gpl-3.0.html" class="underline text-gray-400">GNU GPLv3</a>.</p>
+        <p>Distributed under the license <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank" rel="noopener" class="underline text-gray-400">GNU GPLv3</a>.</p>
     </footer>
 
 </body>
