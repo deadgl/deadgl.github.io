@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Xeno Linux — Orchestration Script for Wine/Proton</title>
+    <title>Xeno Linux — Wine/Proton Orchestration Script</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="../menu.js" defer></script>
@@ -16,7 +16,7 @@
         
         <div class="mb-6">
             <a href="../" class="inline-flex items-center gap-2 text-sm text-gray-400 hover:text-white bg-gray-800/50 px-3 py-1.5 rounded-lg border border-gray-800 transition">
-                <i class="fa-solid fa-arrow-left text-xs"></i> Return to the Main Page
+                <i class="fa-solid fa-arrow-left text-xs"></i> Back to Main Page
             </a>
         </div>
 
@@ -32,14 +32,14 @@
                 Simplified Wine/Proton Environment
             </h1>
             <p class="text-lg text-gray-400 max-w-2xl mx-auto mb-8">
-                Automation script to manage and structure prefix isolation on Linux.
+                An automation script to structure and manage isolated Wine prefix directories on Linux[cite: 2, 27].
             </p>
 
             <div class="flex justify-center gap-4">
                 <a href="#quickstart" class="bg-blue-600 hover:bg-blue-500 text-white font-medium px-6 py-3 rounded-lg shadow-lg transition">
-                    How to use
+                    How to Use
                 </a>
-                <a href="https://github.com/deadgl/xeno-linux" target="_blank" rel="noopener" class="bg-gray-800 hover:bg-gray-700 text-gray-200 font-medium px-6 py-3 rounded-lg border border-gray-700 transition flex items-center gap-2">
+                <a href="https://github.com/deadgl/XENO-LINUX" target="_blank" rel="noopener" class="bg-gray-800 hover:bg-gray-700 text-gray-200 font-medium px-6 py-3 rounded-lg border border-gray-700 transition flex items-center gap-2">
                     <i class="fa-brands fa-github"></i> View Source Code
                 </a>
             </div>
@@ -53,7 +53,7 @@
                     <i class="fa-solid fa-folder-tree"></i> Isolated Structure
                 </h3>
                 <p class="text-gray-400 text-sm">
-                    Ensures that the local WINEPREFIX is set up without polluting your default user environment.
+                    Ensures your local WINEPREFIX is safely configured without cluttering your main user directory[cite: 27].
                 </p>
             </div>
             <div class="bg-gray-800/50 p-6 rounded-xl border border-gray-800">
@@ -61,31 +61,31 @@
                     <i class="fa-solid fa-code-merge"></i> 100% FOSS & GPLv3
                 </h3>
                 <p class="text-gray-400 text-sm">
-                    Fully open-source code under the GNU GPLv3 license, ensuring freedom and transparency in any fork.
+                    Fully open-source code under the GNU GPLv3 license, guaranteeing freedom and transparency for all derivative forks[cite: 58, 59].
                 </p>
             </div>
         </section>
 
         <section id="quickstart" class="space-y-6">
-            <h2 class="text-2xl font-bold text-white mb-4">Quick Installation Guide</h2>
+            <h2 class="text-2xl font-bold text-white mb-4">Quick Setup Guide</h2>
             
             <div class="space-y-4">
                 <div class="bg-gray-950 p-4 rounded-lg border border-gray-800">
                     <span class="text-xs text-gray-500 font-mono">1. Clone the repository</span>
-                    <pre class="text-blue-400 font-mono text-sm mt-1 select-all">git clone https://github.com/deadgl/xeno-linux.git
-cd xeno-linux</pre>
+                    <pre class="text-blue-400 font-mono text-sm mt-1 select-all">git clone https://github.com/deadgl/XENO-LINUX.git
+cd XENO-LINUX</pre>
                 </div>
 
                 <div class="bg-gray-950 p-4 rounded-lg border border-gray-800">
-                    <span class="text-xs text-gray-500 font-mono">2. Get the Xeno executable.</span>
+                    <span class="text-xs text-gray-500 font-mono">2. Obtain the Xeno executable</span>
                     <p class="text-sm text-gray-300 mt-1">
-                        Download the installer manually from <a href="https://www.xeno.now/method" target="_blank" rel="noopener" class="text-blue-400 underline">Xeno</a> and move the executable (e.g.: <code class="text-amber-400">Xeno-v1.3.55.exe</code>) to the destination directory:
+                        Download the latest installer manually from <a href="https://www.xeno.now/method" target="_blank" rel="noopener" class="text-blue-400 underline">xeno.now/method</a> and move the downloaded executable (e.g., <code class="text-amber-400">Xeno-v1.3.55.exe</code>) to the target directory[cite: 111, 112]:
                     </p>
                     <pre class="text-gray-400 font-mono text-xs mt-2 bg-gray-900 p-2 rounded">~/.wine_roblox_xeno/drive_c/Xeno/</pre>
                 </div>
 
                 <div class="bg-gray-950 p-4 rounded-lg border border-gray-800">
-                    <span class="text-xs text-gray-500 font-mono">3. Make the script executable and run it.</span>
+                    <span class="text-xs text-gray-500 font-mono">3. Make the script executable and run</span>
                     <pre class="text-blue-400 font-mono text-sm mt-1 select-all">chmod +x launch.sh
 ./launch.sh</pre>
                 </div>
@@ -97,18 +97,18 @@ cd xeno-linux</pre>
                 <i class="fa-solid fa-triangle-exclamation"></i> Disclaimer
             </h3>
             <p class="text-amber-200/80 text-sm leading-relaxed mb-2">
-                This project is strictly an orchestration and environment configuration script for Linux/Wine, provided for educational and testing purposes.
+                This project is a Linux/Wine environment orchestration script provided solely for educational and testing purposes[cite: 113, 121].
             </p>
             <ul class="list-disc list-inside text-amber-200/70 text-xs space-y-1">
-                <li>The use of third-party tools may violate the respective platforms' Terms of Service and result in suspension or a ban.</li>
-                <li>The software is provided "AS IS," without any express or implied warranty, under the terms of the GPLv3 license.</li>
+                <li>Using third-party tools alongside online platforms may violate their Terms of Service and could result in account suspension or termination[cite: 114, 122].</li>
+                <li>The software is provided "AS IS", without warranty of any kind under the terms of the GPLv3 license[cite: 61, 115, 123].</li>
             </ul>
         </section>
 
     </main>
 
     <footer class="border-t border-gray-800 py-6 text-center text-xs text-gray-500">
-        <p>Distributed under the license <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank" rel="noopener" class="underline text-gray-400">GNU GPLv3</a>.</p>
+        <p>Distributed under the <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank" rel="noopener" class="underline text-gray-400">GNU GPLv3 License</a>[cite: 118].</p>
     </footer>
 
 </body>
