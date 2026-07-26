@@ -1,84 +1,47 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Em Breve</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: #0f172a;
-            color: #f8fafc;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            padding: 1.5rem;
-        }
-
-        .card {
-            background-color: #1e293b;
-            border: 1px solid #334155;
-            border-radius: 1rem;
-            padding: 2.5rem;
-            max-width: 480px;
-            width: 100%;
-            text-align: center;
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
-        }
-
-        .status-dot {
-            display: inline-block;
-            width: 10px;
-            height: 10px;
-            background-color: #10b981;
-            border-radius: 50%;
-            margin-right: 8px;
-            box-shadow: 0 0 12px #10b981;
-        }
-
-        .badge {
-            display: inline-flex;
-            align-items: center;
-            background-color: rgba(16, 185, 129, 0.1);
-            color: #34d399;
-            padding: 0.35rem 0.85rem;
-            border-radius: 9999px;
-            font-size: 0.875rem;
-            font-weight: 500;
-            margin-bottom: 1.5rem;
-            border: 1px solid rgba(16, 185, 129, 0.2);
-        }
-
-        h1 {
-            font-size: 1.75rem;
-            font-weight: 700;
-            margin-bottom: 0.75rem;
-            letter-spacing: -0.025em;
-        }
-
-        p {
-            color: #94a3b8;
-            font-size: 1rem;
-            line-height: 1.6;
-        }
-    </style>
+<head> 
+<meta charset="UTF-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>DeadGL — Project & Automation Hub</title> 
+<script src="https://cdn.tailwindcss.com"></script> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> 
+<script src="./menu.js" defer></script>
 </head>
-<body>
+<body class="bg-gray-900 text-gray-100 font-sans min-h-screen flex flex-col justify-between"> 
 
-    <main class="card">
-        <div class="badge">
-            <span class="status-dot"></span> Servidor Ativo
-        </div>
-        <h1>Em Construção</h1>
-        <p>Este site está em desenvolvimento. Volte em breve para conferir as novidades!</p>
-    </main>
+<div id="main-nav"></div> 
+
+<main class="max-w-4xl mx-auto px-6 py-16 flex-grow"> 
+<section class="text-center py-12"> 
+<h1 class="text-4xl sm:text-6xl font-extrabold text-white mb-6 tracking-tight"> 
+DeadGL <span class="text-blue-500">Repository</span> 
+</h1> 
+<p class="text-lg text-gray-400 max-w-2xl mx-auto mb-10"> 
+Automation script center, Wine/Linux compatibility studies and open-source tools. 
+</p> 
+</section> 
+
+<section class="grid gap-6"> 
+<div class="bg-gray-800/60 p-6 rounded-2xl border border-gray-700/60 hover:border-blue-500/50 transition flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4"> 
+<div> 
+<div class="flex items-center gap-2 mb-2"> 
+<span class="bg-blue-500/10 text-blue-400 text-xs px-2.5 py-1 rounded-full font-mono border border-blue-500/20">Shell Script</span> 
+<span class="bg-green-500/10 text-green-400 text-xs px-2.5 py-1 rounded-full font-mono border border-green-500/20">GPLv3</span> 
+</div> 
+<h2 class="text-2xl font-bold text-white">Xeno Linux</h2> 
+<p class="text-gray-400 text-sm mt-1">Orchestration and automation of Wine/Proton environment in isolated directories.</p> 
+</div> 
+<a href="./xeno-linux/" class="bg-blue-600 hover:bg-blue-500 text-white font-medium px-5 py-2.5 rounded-lg transition text-sm flex items-center gap-2 whitespace-nowrap"> 
+Access Project <i class="fa-solid fa-arrow-right text-xs"></i> 
+</a> 
+</div> 
+</section> 
+</main> 
+
+<footer class="border-t border-gray-800 py-6 text-center text-xs text-gray-500"> 
+<p>© DeadGL. All rights reserved. Distributed under the GPLv3 license.</p> 
+</footer>
 
 </body>
 </html>
